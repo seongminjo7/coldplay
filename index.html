@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coldplay ( 대혜건축 클론코딩 )</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon_img.png">
+  <!-- 
+    원본 사이트 : http://daehye.com/
+  -->
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">
+      <a href="#" title="홈으로 이동">
+        <span class="blind">콜드플레이</span>
+      </a>
+    </h1>
+    <nav class="gnb">
+      <ul>
+        <li><a href="#" title="대매뉴">ABOUT COLDPLAY</a></li>
+        <li><a href="#" title="대매뉴">MUSIC</a></li>
+        <li><a href="#" title="대매뉴">NEWS</a></li>
+        <li><a href="#" title="대매뉴">MD</a></li>
+        <li><a href="#" title="대매뉴">TOUR</a></li>
+      </ul>
+    </nav>
+    <div class="hRightMenu">
+      <div class="sns">
+        <a href="" class="youtube" title="콜드플레이 유튜브 페이지 새 창으로 이동" target="_blank">
+          YOUTUBE
+        </a>
+        <a href="" class="instagram" title="콜드플레이 인스타그렘 페이지 새 창으로 이동" target="_blank">
+          INSTAGRAM
+        </a>
+      </div><!-- sns -->
+      <div class="subBtn">
+        <span class="line01"></span>
+        <span class="line02"></span>
+      </div>
+    </div><!-- hRightMenu -->
+  </header>
+
+  <main class="container">
+    <div class="visualWrapper">
+      <div class="inner">
+        <div class="visualTop">
+          <div class="visualText ronoto">
+            <span>EVERYONE IS AN ALIEN</span>
+            <span>SOMEWHERE</span>
+          </div><!-- visualText -->
+          <!-- visualText 의 영역은 div와 span으로 감싸는 것보다는 
+
+          -case01
+           <p class="visualText ronoto">
+            <span>EVERYONE IS AN ALIEN</span>
+            <span>SOMEWHERE</span>
+           </p>
+
+           -case02
+           <h2 class="visualText ronoto">
+            <span>EVERYONE IS AN ALIEN</span>
+            <span>SOMEWHERE</span>
+           </h2>
+
+           -case03
+           <div class="visualText ronoto">
+            <p>
+              <span>EVERYONE IS AN ALIEN</span>
+              <span>SOMEWHERE</span>
+            </p>
+          </div>
+
+          과 같은 방법이 더 좋아보입니다. 
+          -->
+        </div><!-- visualTop -->
+      </div>
+      <div class="visualBottom">
+        <span class="blind">
+          콜드플레이 Music Of The Spheres World Tour 영상
+        </span>
+        <video src="./images/visual_video.mp4" autoplay muted loop></video>
+      </div><!-- visualBottom -->
+    </div><!-- visualWrapper -->
+    <div class="topContentWrapper">
+      <div class="inner">
+        <section class="overview">
+          <div class="overviewL">
+            <span class="subTitle">About Coldplay</span>
+            <h2 class="playfair">Believe in Love</h2>
+            <div class="overText">
+              <span>콜드플레이는 1996년 영국 런던 UCL에서 결성된 얼터너티브 록 밴드이다.</span>
+              <span>밴드의 멤버는 그룹의 보컬이자 피아니스트, 기타리스트인 크리스 마틴, 리드 기타리스트 조니 버클랜드,</span>
+              <span>베이스 가이 베리먼, 그리고 드러머와 기타 악기 연주를 맡은 윌 챔피언이다.</span>
+            </div>
+            <div class="moreBtn">
+              <a href="#" title="더보기 페이지로 새 창 이동" target="_blank">
+                <span>view more</span>
+                <span class="click">→</span>
+                <!-- 화살표 이미지의 경우 가상요소를 한번 이용해보세요. -->
+              </a>
+            </div><!-- moreBtn -->
+          </div><!-- overviewL -->
+          <div class="overviewR">
+            <div class="overviewImg">
+              <div class="overvireImg01">
+                <img src="./images/overview_01.png" alt="콜드플레이 단체 이미지">
+              </div>
+              <div class="overvireImg02">
+                <img src="./images/overview_02.png" alt="콜드플레이 콘서트 Believe in Love">
+              </div>
+            </div><!-- overviewImg -->
+          </div><!-- overviewR -->
+        </section><!-- overview -->
+
+        <section class="album">
+          <div class="sectionTop">
+            <div class="sectionTopL">
+              <span class="subTitle">Album</span>
+              <h3>콜드플레이의 다양한 앨범들</h3>
+            </div><!-- sectionTopL -->
+            <ul class="sectionTopR">
+              <li>정규 앨범</li>
+              <li>싱글 앨범</li>
+              <li>라이브 앨범</li>
+            </ul>
+          </div><!-- sectionTop -->
+          <div class="albumBottom">
+            <div class="item">
+              <!-- item은 acticle이 더 좋아보입니다.
+                앨범 하나에 이미지, 제목, 날짜로 구성되어서 독립컨텐츠로도 활용이 가능합니다. 
+
+                <article class="item fix">
+                  <div class="itemImg">
+                    <img src="./images/album_02.png" alt="콜드플레이 정규 1집 Parachutes">
+                  </div>
+                  <div class="itemText">
+                    <time class="date" datetime="2000-07-10">2000/07/10</time>
+                    <h3 class="textTitle">Parachutes</h3>
+                  </div>
+                </article>
+              -->
+              <div class="itemImg">
+                <img src="./images/album_01.png" alt="콜드플레이 정규 4집 Viva la Vida or Death and All His Friends">
+              </div>
+              <div class="itemText">
+                <div class="text">
+                  <span class="date">2008/06/12</span>
+                  <span class="textTitle">Viva la Vida or Death and All His Friends</span>
+                </div><!-- text -->
+              </div><!-- itemText -->
+            </div><!-- item -->
+            <div class="item fix">
+              <div class="itemImg">
+                <img src="./images/album_02.png" alt="콜드플레이 정규 1집 Parachutes">
+              </div>
+              <div class="itemText">
+                <div class="text">
+                  <span class="date">2000/07/10</span>
+                  <span class="textTitle">Parachutes</span>
+                </div><!-- text -->
+              </div><!-- itemText -->
+            </div><!-- item -->
+            <div class="item fix">
+              <div class="itemImg">
+                <img src="./images/album_03.png" alt="콜드플레이 정규 7집 A Head Full of Dreams">
+              </div>
+              <div class="itemText">
+                <div class="text">
+                  <span class="date">2015/12/04</span>
+                  <span class="textTitle">A Head Full of Dreams</span>
+                </div><!-- text -->
+              </div><!-- itemText -->
+            </div><!-- item -->
+            <div class="item">
+              <div class="itemImg">
+                <img src="./images/album_04.png" alt="콜드플레이 정규 5집 Mylo Xyloto">
+              </div>
+              <div class="itemText">
+                <div class="text">
+                  <span class="date">2011/10/19</span>
+                  <span class="textTitle">Mylo Xyloto</span>
+                </div><!-- text -->
+              </div><!-- itemText -->
+            </div><!-- item -->
+          </div><!-- albumBottom -->
+        </section><!-- album -->
+
+        <div class="musicVideo">
+          <div class="item">
+            <div class="videoBox">
+              <iframe width="100%" src="https://www.youtube.com/embed/sOrUobwKOV8?si=Yb8zunDG0e9F-Wfm"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div><!-- videoBox -->
+            <div class="itemText">
+              <div class="text">
+                <span class="date">2024/06/30</span>
+                <span class="textTitle">feelslikeimfallinginlove</span>
+              </div><!-- text -->
+            </div><!-- itemText -->
+          </div><!-- item -->
+          <div class="moreBtn">
+            <a href="https://youtube.com/playlist?list=PLsvoYlzBrLFAJd4hNQSHw1lYjDKeQB_iU&si=dxtTwLhJTqPQMrfE"
+              title="콜드플레이 뮤직비디오 재생목록으로 새 창 이동" target="_blank">
+              <span>more video</span>
+              <span class="click">→</span>
+            </a>
+          </div><!-- moreBtn -->
+        </div><!-- musicVideo -->
+
+        <section class="news">
+          <div class="sectionTop">
+            <div class="sectionTopL">
+              <span class="subTitle">News</span>
+              <h3>콜드플레이의 최신 소식을 확인해보세요.</h3>
+            </div><!-- sectionTopL -->
+            <div class="moreBtn">
+              <a href="https://www.coldplay.com/news/" title="콜드플레이 최신 소식으로 새 창 이동" target="_blank">
+                <span>view more</span>
+                <span class="click">→</span>
+              </a>
+            </div><!-- moreBtn -->
+          </div><!-- sectionTop -->
+          <ul class="newsList">
+            <li>
+
+              <!--  <article>
+                      <h4 class="newsTitle">King’s Cross takeover in Aug / Sept</h4>
+                      <p class="newsText">
+                        Moon Music의 호평을 받고 있는 비주얼 반주인 'A Film For The Future'가 올 여름 런던 라이트룸에서 360° 몰입형 상영을 위해 돌아온다는 소식이 전해졌습니다.
+                      </p>
+                      <span class="date">Apr 17, 2025</span>
+                    </article> -->
+              <span class="newsTitle">King’s Cross takeover in Aug / Sept</span>
+              <span class="newsText">Moon Music의 호평을 받고 있는 비주얼 반주인 'A Film For The Future'가 올 여름 런던 라이트룸에서 360° 몰입형 상영을
+                위해 돌아온다는 소식이
+                전해졌습니다.</span>
+              <span class="date">May 08, 2025
+              </span>
+            </li>
+            <li>
+              <span class="newsTitle">WE PRAY TWICE Version out now</span>
+              <span class="newsText">WE PRAY가 새로운 버전으로 전 세계에 출시되었습니다. 한국어 구절이 포함된 트와이스와의 콜라보레이션은 지금
+                스트리밍/다운로드할 수
+                있습니다.</span>
+              <span class="date">Apr 17, 2025</span>
+            </li>
+            <li>
+              <span class="newsTitle">New ARCANE single ft Coldplay out now</span>
+              <span class="newsText">Elyanna와 콜드플레이가 피쳐링한 Stromae와 Pomme의 글로벌 히트 싱글 'Ma Meilleure Ennemie'의 새로운 확장 버전이
+                출시되었습니다
+              </span>
+              <span class="date">Apr 04, 2025</span>
+            </li>
+            <li>
+              <span class="newsTitle">A Film For The Future, watch now!</span>
+              <span class="newsText">전 세계 1위 앨범인 Moon Music의 44분짜리 비주얼 파트너인 A Film For The Future라는 새로운 프로젝트를
+                발표했습니다.</span>
+              <span class="date">Jan 22, 2025</span>
+            </li>
+          </ul><!-- newsList -->
+        </section><!-- news -->
+
+      </div><!-- inner -->
+    </div><!-- topContentWrapper -->
+
+    <section class="bottomContentWapper">
+      <h2 class="ronoto">BELIEVE IN LOVE</h2>
+      <div class="tour">
+        <div class="inner">
+          <div class="tourContent">
+            <div class="tourText">
+              <span class="subTitle">TOUR</span>
+              <span class="tourTitle">Music Of The Spheres Tour</span>
+              <span class="tourTitle">소식을 확인해보세요.</span>
+              <!--
+              <p class="subTitle">TOUR</p>
+              <h3 class="tourTitle">Music Of The Spheres Tour</h3>
+              <p>소식을 확인해보세요.</p>
+              
+              -->
+              <div class="moreBtn">
+                <a href="https://www.coldplay.com/tour/" title="콜드플레이 투어 소식으로 새 창 이동" target="_blank">
+                  <span>view more</span>
+                  <span class="click">→</span>
+                </a>
+              </div><!-- moreBtn -->
+            </div><!-- tourText -->
+          </div><!-- tourContent -->
+        </div><!-- inner -->
+      </div><!-- tour -->
+    </section><!-- bottomContentWapper -->
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div class="footerWapper">
+        <h1 class="logo">
+          <a href="#" title="홈으로 이동">
+            <span class="blind">콜드플레이</span>
+          </a>
+        </h1>
+        <!-- footer영역의 내용들은 꾸미는 요소들로 생각하시면 됩니다.
+         h1보다는 span이나 div로 만드셔도 되요
+         h1은 페이지에서 한번만 사용되는게 좋아요
+          -->
+        <ul>
+          <li>
+            <a href="https://privacy.wmg.com/wmi/privacy" title="개인정보 보호정책으로 새 창 이동" target="_blank">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="https://privacy.wmg.com/wmi/terms-of-use" title="약관으로 새 창 이동" target="_blank">Terms &
+              Conditions</a>
+          </li>
+          <li>
+            <a href="https://www.wminewmedia.com/cookies-policy/?ot=5aaaddf4-be7f-48cf-bd94-9ac886f35916&url=www.coldplay.com"
+              title="쿠키 정책으로 새 창 이동" target="_blank">Cookies Policy</a>
+          </li>
+          <li>
+            <a href="https://www.wminewmedia.com/cookies-policy/?ot=5aaaddf4-be7f-48cf-bd94-9ac886f35916&url=www.coldplay.com"
+              title="쿠키 설정으로 새 창 이동" target="_blank">Cookies Settings</a>
+          </li>
+        </ul>
+        <span class="copy">
+          Copyright © 2025 by COLDPLAY. All rights reserved.
+        </span>
+      </div><!-- footerWapper -->
+    </div><!-- inner -->
+  </footer>
+</body>
+
+</html>

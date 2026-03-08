@@ -1,0 +1,206 @@
+/* 
+  1500px
+  1035px
+  812px 
+  414px
+*/
+
+/* 1500px */
+@media screen and (max-width : 1500px) {
+
+  .gnb {
+    display: none;
+  }
+
+  .overview .overviewL {
+    min-width: 400px;
+  }
+
+  .overview .overviewL .overText span {
+    display: inline;
+  }
+
+  .item.fix {
+    width: 45%;
+  }
+
+  .album {
+    padding-top: 100px;
+  }
+
+  .footerWapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerWapper ul li {
+    padding: 0 40px 40px;
+  }
+
+  .footerWapper ul li:first-child {
+    padding-left: 0;
+  }
+
+  .footerWapper h1,
+  .footerWapper .copy {
+    margin-bottom: 20px;
+  }
+}
+
+/* 1166px */
+@media screen and (max-width : 1166px) {
+  .visualText {
+    padding-top: 150px;
+  }
+}
+
+/* 1035px */
+@media screen and (max-width : 1035px) {
+
+  .overview .overviewL h2 {
+    font-size: 80px;
+  }
+
+  .overview .overviewL {
+    min-width: 300px;
+  }
+
+  .newsList li {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .footerWapper ul li {
+    padding: 0 20px 40px;
+  }
+}
+
+/* 812px */
+@media screen and (max-width : 812px) {
+
+  .logo {
+    width: 150px;
+    height: 40px;
+  }
+
+  .hRightMenu {
+    width: 38px;
+  }
+
+  .sns {
+    display: none;
+  }
+
+  .visualText {
+    font-size: 70px;
+    padding-top: 200px;
+  }
+
+  section {
+    padding-top: 80px;
+  }
+
+  .overview {
+    flex-direction: column;
+  }
+
+  .overview .overviewL,
+  .overview .overviewR {
+    width: 100%;
+  }
+
+  .sectionTop {
+    flex-direction: column;
+  }
+
+  .sectionTop .sectionTopL {
+    align-self: flex-start;
+    margin-bottom: f 10px;
+  }
+
+  .sectionTop .sectionTopL h3 {
+    font-size: 22px;
+  }
+
+  .sectionTop ul.sectionTopR {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .item .itemText .text .textTitle {
+    font-size: 18px;
+  }
+
+  .newsList li {
+    width: 100%;
+  }
+
+  .tourText .tourTitle {
+    font-size: 35px;
+  }
+
+  .footerWapper ul li {
+    padding: 0 10px 40px;
+  }
+}
+
+/* 448px */
+@media screen and (max-width : 448px){
+    .visualText {    font-size: 65px;
+    padding-top: 180px;
+  }
+}
+/* 414px */
+@media screen and (max-width : 414px) {
+
+  .logo {
+    width: 100px;
+    height: 40px;
+  }
+
+  .visualTop {
+    height: 350px;
+  }
+
+  .visualText {
+    font-size: 60px;
+    padding-top: 150px;
+  }
+
+  .overview .overviewL h2 {
+    font-size: 70px;
+  }
+
+  .albumBottom {
+    flex-direction: column;
+  }
+
+  .item,
+  .item.fix {
+    width: 100%;
+  }
+
+  .newsList {
+    flex-direction: column;
+  }
+
+  .tourText .tourTitle {
+    font-size: 25px;
+  }
+
+  .footerWapper ul {
+    flex-wrap: wrap;
+  }
+
+  .footerWapper ul li {
+    padding: 0 10px 20px;
+  }
+
+  .footerWapper ul li:nth-child(3) {
+    padding-left: 0;
+  }
+}
