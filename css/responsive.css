@@ -12,6 +12,10 @@
     display: none;
   }
 
+  .subBtn{
+    display: block;
+  }
+
   .overview .overviewL {
     min-width: 400px;
   }

@@ -124,6 +124,7 @@ header a {
   height: 12px;
   width: 38px;
   position: relative;
+  display: none;
 }
 
 .subBtn span {
