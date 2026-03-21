@@ -12,15 +12,15 @@
     display: none;
   }
 
-  .subBtn{
+  .subBtn {
     display: block;
   }
 
-  .overview .overviewL {
+  .about .aboutL {
     min-width: 400px;
   }
 
-  .overview .overviewL .overText span {
+  .about .aboutL .aboutText span {
     display: inline;
   }
 
@@ -31,14 +31,17 @@
   .album {
     padding-top: 100px;
   }
+  .newsList {
+    margin-top: 80px;
+  }
+  .bottomContentWapper h2 {
+    font-size: 150px;
+  }
 
   .footerWapper {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .footerWapper ul li {
-    padding: 0 40px 40px;
+    gap: 30px;
   }
 
   .footerWapper ul li:first-child {
@@ -49,6 +52,7 @@
   .footerWapper .copy {
     margin-bottom: 20px;
   }
+
 }
 
 /* 1166px */
@@ -56,18 +60,25 @@
   .visualText {
     padding-top: 150px;
   }
+
+  .bottomContentWapper h2 {
+    font-size: 100px;
+  }
 }
+
+
 
 /* 1035px */
 @media screen and (max-width : 1035px) {
 
-  .overview .overviewL h2 {
+  .about .aboutL h2 {
     font-size: 80px;
   }
 
-  .overview .overviewL {
+  .about .aboutL {
     min-width: 300px;
   }
+
 
   .newsList li {
     width: 50%;
@@ -104,12 +115,12 @@
     padding-top: 80px;
   }
 
-  .overview {
+  .about {
     flex-direction: column;
   }
 
-  .overview .overviewL,
-  .overview .overviewR {
+  .about .aboutL,
+  .about .aboutR {
     width: 100%;
   }
 
@@ -119,9 +130,11 @@
 
   .sectionTop .sectionTopL {
     align-self: flex-start;
-    margin-bottom: f 10px;
+    margin-bottom: 10px;
   }
-
+  .sectionTop .sectionTopL .subTitle{
+    margin-bottom: 20px;
+  }
   .sectionTop .sectionTopL h3 {
     font-size: 22px;
   }
@@ -143,6 +156,10 @@
     width: 100%;
   }
 
+  .bottomContentWapper h2 {
+    font-size: 80px;
+  }
+
   .tourText .tourTitle {
     font-size: 35px;
   }
@@ -153,11 +170,13 @@
 }
 
 /* 448px */
-@media screen and (max-width : 448px){
-    .visualText {    font-size: 65px;
+@media screen and (max-width : 448px) {
+  .visualText {
+    font-size: 65px;
     padding-top: 180px;
   }
 }
+
 /* 414px */
 @media screen and (max-width : 414px) {
 
@@ -167,15 +186,15 @@
   }
 
   .visualTop {
-    height: 350px;
+    height: 300px;
   }
 
   .visualText {
-    font-size: 60px;
+    font-size: 40px;
     padding-top: 150px;
   }
 
-  .overview .overviewL h2 {
+  .about .aboutL h2 {
     font-size: 70px;
   }
 
@@ -183,13 +202,16 @@
     flex-direction: column;
   }
 
-  .item,
-  .item.fix {
+  .item.active {
     width: 100%;
   }
 
   .newsList {
     flex-direction: column;
+  }
+
+  .bottomContentWapper h2 {
+    font-size: 40px;
   }
 
   .tourText .tourTitle {

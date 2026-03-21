@@ -2,6 +2,21 @@ body,
 html {
   font-family: "Noto Sans KR", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #fff;
+  background-color: #F27073;;
+}
+
+
+#about_section,
+#album_section,
+#news_section,
+#tour_section {
+  scroll-margin-top: -100px;
+  /* 고정된 네비게이션 높이만큼 띄워줌 */
 }
 
 .inner {
@@ -204,14 +219,14 @@ section {
   padding-top: 220px;
 }
 
-.overview {
+.about {
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
 
-.overview .overviewL {
+.about .aboutL {
   width: 50%;
   height: 100%;
   display: flex;
@@ -224,18 +239,18 @@ section {
   font-size: 26px;
 }
 
-.overview .overviewL h2 {
+.about .aboutL h2 {
   font-size: 96px;
   font-weight: normal;
   margin: 30px 0 50px;
 }
 
-.overview .overviewL .overText {
+.about .aboutL .aboutText {
   width: 100%;
   margin-bottom: 50px;
 }
 
-.overview .overviewL .overText span {
+.about .aboutL .aboutText span {
   display: block;
   line-height: 1.5;
 }
@@ -262,24 +277,38 @@ section {
 
 .moreBtn a span.click {
   width: 46px;
+  height: 46px;
+  /* 높이 추가 추천 (정원 만들기) */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   background: #333;
-  border-radius: 46px;
+  border-radius: 50%;
   text-align: center;
+  position: relative;
 }
-.moreBtn a:hover span{
+
+.moreBtn a span.click::after {
+  content: "\2192";
+  /* → */
+}
+
+.moreBtn a:hover span {
   color: #000;
   font-weight: bold;
 }
-.moreBtn a:hover span.click{
+
+.moreBtn a:hover span.click {
   background: #9981ED;
 }
-.overview .overviewR {
+
+.about .aboutR {
   width: 45%;
   height: 100%;
 }
 
-.overview .overviewR .overviewImg {
+.about .aboutR .aboutImg {
   width: 100%;
   height: 100%;
   display: flex;
@@ -287,7 +316,7 @@ section {
   gap: 10px;
 }
 
-.overview .overviewR .overviewImg img {
+.about .aboutR .aboutImg img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -324,19 +353,34 @@ h3 {
   justify-content: space-between;
 }
 
+.sectionTop ul.sectionTopR li {
+  cursor: pointer;
+}
+
+.sectionTop ul.sectionTopR li.active {
+  color: #FE0F16;
+  font-weight: bold;
+}
+
 .albumBottom {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 5%;
+  gap: 0 5%;
 }
 
-.item {
+.albumBottom .item {
+  display: none;
+  /* 기본 숨김 */
   width: 45%;
+  margin-bottom: 150px;
+}
+
+/* 필터링 시 보여줄 클래스 */
+.item.active {
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px;
 }
 
 .item.fix {
@@ -438,7 +482,7 @@ h3 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-    color: #F27073;
+  color: #F27073;
   /* 말줄임표 나중에 변경  */
 }
 
@@ -474,9 +518,11 @@ h3 {
   color: #333;
   background: #fff;
 }
+
 .tourText .moreBtn a:hover span.click {
   background: #17FF00;
 }
+
 /* footer */
 .footerWapper {
   width: 100%;
@@ -484,7 +530,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 26px;
+  padding: 36px 0;
   border-top: 1px solid #5E69D4;
   box-sizing: border-box;
 }
@@ -501,10 +547,13 @@ h3 {
 
 .footerWapper ul {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: min(20px); */
 }
 
 .footerWapper ul li {
-  padding: 20px 40px 40px;
+  padding: 0 30px;
   box-sizing: border-box;
 }
 
@@ -513,12 +562,13 @@ h3 {
   color: #333;
   transition: 300ms;
 }
+
 .footerWapper ul li a:hover {
   color: #30B2F3;
 }
 
 .footerWapper .copy {
   display: block;
-  font-size: 12px;
-  align-self: start;
+  font-size: 14px;
+  /* align-self: center; */
 }
