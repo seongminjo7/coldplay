@@ -8,12 +8,60 @@
 /* 1500px */
 @media screen and (max-width : 1500px) {
 
+  /* 1. 메뉴 전체를 세로형으로 변경 */
   .gnb {
     display: none;
+    /* 기본은 숨김 */
+    position: absolute;
+    top: 110px;
+    /* 헤더 높이만큼 아래로 */
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #eee;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   }
 
+  /* 2. JS에서 붙여줄 활성화 클래스 */
+  .gnb.active {
+    display: block;
+  }
+
+  /* 3. 메뉴 항목을 세로로 정렬 */
+  .gnb ul {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gnb ul li {
+    padding: 0;
+    /* 기존 좌우 패딩 제거 */
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .gnb ul li a {
+    line-height: 60px;
+    /* 클릭하기 편하게 높이 조절 */
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  /* 4. 햄버거 버튼 보이게 설정 */
   .subBtn {
     display: block;
+    cursor: pointer;
+  }
+
+  /* 버튼 클릭 시 X자로 유지하고 싶다면 추가 */
+  .subBtn.open .line01 {
+    transform: rotate(45deg);
+    top: 5px;
+  }
+
+  .subBtn.open .line02 {
+    transform: rotate(-45deg);
+    bottom: 5px;
   }
 
   .about .aboutL {
@@ -31,9 +79,11 @@
   .album {
     padding-top: 100px;
   }
+
   .newsList {
     margin-top: 80px;
   }
+
   .bottomContentWapper h2 {
     font-size: 150px;
   }
@@ -132,9 +182,11 @@
     align-self: flex-start;
     margin-bottom: 10px;
   }
-  .sectionTop .sectionTopL .subTitle{
+
+  .sectionTop .sectionTopL .subTitle {
     margin-bottom: 20px;
   }
+
   .sectionTop .sectionTopL h3 {
     font-size: 22px;
   }
