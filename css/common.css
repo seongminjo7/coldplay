@@ -165,16 +165,6 @@ header a {
   bottom: 0;
 }
 
-.subBtn:hover .line01 {
-  transform: rotate(45deg);
-  top: 5px;
-}
-
-.subBtn:hover .line02 {
-  transform: rotate(-45deg);
-  bottom: 5px;
-}
-
 /* visual */
 .visualWrapper {
   width: 100%;
